@@ -1,0 +1,42 @@
+{
+  "name": "url-shortner-backend",
+  "version": "1.0.0",
+  "description": "This is node.js application that generates short url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "migrate": "node-pg-migrate up",
+    "migrate:create": "node-pg-migrate create",
+    "migrate:rollback": "node-pg-migrate down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshitijakubal-byte/URL-shortner.git"
+  },
+  "keywords": [
+    "url-shortner",
+    "node.js",
+    "postgres"
+  ],
+  "author": "K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kshitijakubal-byte/URL-shortner/issues"
+  },
+  "homepage": "https://github.com/kshitijakubal-byte/URL-shortner#readme",
+  "dependencies": {
+    "base62": "^2.0.2",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "pg": "^8.20.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^8.0.4",
+    "nodemon": "^3.1.14"
+  }
+}
